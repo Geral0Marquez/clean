@@ -802,7 +802,7 @@ width: 80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding-left: 4%;
-    padding-right: 7%;
+    padding-right: 8%;
     background-color: #242635;
  
 }
