@@ -1,0 +1,1851 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    background-color: #1f1d2c;
+}
+
+.grid-contenedor>*{
+
+    text-align: center;
+    
+   
+   
+    
+}
+
+.grid-contenedor{
+    display: grid;
+    
+    grid-template-areas: 
+    "nav nav "
+    "header header"
+    "section section"
+    "section2 section2"
+    "section3 section3"
+    "section4 section4"
+    "penultimo penultimo"
+    "ultimo ultimo"
+    ;
+    
+}
+
+
+
+
+
+h1{
+    color: #ffffff;
+    font-size: 50px;
+ 
+    font-weight: 600;  
+}
+
+h2{
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;  
+}
+
+h3{
+    text-align: center;
+    color: #ffffff;
+   
+}
+h5{
+    text-align: center;
+    color: #e5e5e5;
+    
+}
+h6{
+    text-align: center;
+    color: #e5e5e5;  
+}
+
+
+p{
+ 
+   text-align: center;
+    color: #e5e5e5;  
+   font-weight: 400; 
+}
+
+span{
+    color: #f1a600;
+}
+section{
+ background-color: #242635;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.pp{
+    font-size:18px;
+    font-weight: 400;
+    position: relative;
+   
+    text-align: center;
+}
+
+#u1{
+    position: relative;
+    left: 28%;
+    width: 42%;
+}
+#aca2{
+    position: relative;
+    bottom: 10%;
+    left: 28%;
+    width: 42%;
+  
+}
+
+
+.caja-mediana{
+    display: grid;
+    grid-template-rows: 27%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 2rem;
+  
+    padding-top: 1rem;
+}
+
+
+.caja-grande{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #242635;
+    padding-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  
+    
+         
+ }
+.b6{
+    padding-bottom: 2rem;
+}
+
+.b1{
+    background-color:#242635 ;
+}
+.b2{
+    background-color:#242635 ;
+}
+.b3{
+    background-color: #242635;
+}
+.b4{
+    background-color: #242635;
+}
+.b5{
+    background-color: #242635;
+    color:#242635;
+}
+.b6{
+    background-color: #242635;
+    color: #242635;
+}
+
+
+.C1_1 {
+   
+  
+    font-size: 32px;
+    font-weight: 600;
+    align-items: center;
+    padding-bottom: 3%;
+    color: #ffffff;
+}
+
+.C1_2 {
+   
+    padding-bottom: 2%;
+   
+    width: 100%;
+    justify-items: center;
+    color: #e5e5e5;
+   
+}
+
+
+
+
+.nav{
+    position: relative;
+    display: flex;  /*hacemos el nav flexible para poder darle flexibilidad a mis elementos*/
+    justify-content: space-between;
+     /*me da el espacio disponible entre los elementos*/
+    align-items: center; /* para centrarlos sobre el eje secundario*/
+    padding: .5rem 1.25rem; /*separar la nav de su contenido, no puede ser margin xq 
+    seria dentro de los elementos*/
+    height: 55px;
+
+}
+
+
+
+nav>label>img{
+    width: 100%;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+
+input#menu-hamburguesa~ul{
+   
+    background-color: #1f1d2c;
+    list-style: none;
+    position: absolute;
+    width: 50%;
+    height:calc(80vh- 55px);
+    top: 55px;
+    right: 100%;
+    transition: all 10ms linear;
+    display: flex;
+    flex-direction: column;  /*el display hace que pueda centrar mis elementos*/
+    align-items: center;
+    z-index: 99999999;
+  
+  
+}
+
+.nav li:hover{
+    background-color: #242635;
+
+}
+
+.nav li{
+    font-size: 16px;
+    border-top: 2px solid #f1a600;
+   
+}
+
+.nav li a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px; 
+  
+}
+
+
+input#menu-hamburguesa:checked~ul{
+    right: 0;
+    
+    
+}
+#ol{
+    position: relative;
+    
+    right:30%;
+}
+
+
+
+header{
+    width: 100%;
+    padding-bottom: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+    margin-right: 2px;
+
+}
+
+
+.S2{
+    position: relative;
+    right: 2%;
+}
+
+#img{
+    position: relative;
+    right: 20%;
+    width: 110%;
+    height: 100%;
+}
+
+.ex{
+        
+    position: relative;
+   font-size: 28px;
+   text-align: left; 
+   
+
+}
+
+
+
+#pl{
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    width:120%;
+   
+}
+
+
+
+.mmm{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    
+}
+
+
+
+#in {
+    position: relative;
+    left: 10%;
+    width: 50%;
+    
+   
+}
+
+#twitter {
+    position: relative;
+    right:45%;
+    width: 50%;
+  
+
+}
+
+#instgram {
+    position: relative;
+    right:15%;
+    width: 50%;
+   
+
+}
+
+.s1{
+    
+    margin-left: 4%;
+    background-color: #1f1d2c;
+}
+   
+
+                
+                
+                
+
+
+/*-----------------*/
+
+/*
+    
+    .contenedor-header{
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        margin-left: 3%;
+        margin-right: 1%;
+       
+        
+      
+    }
+    
+    .mm{
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+       background-color: red;
+       
+        z-index: 1;
+       
+    
+    }
+
+    .parrafo{
+        color: #E5E5E5;
+    }
+    
+    #pl{
+        position: relative;
+        padding-bottom: 3%;
+       
+        text-align: left;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    #años{
+        position: relative;
+        
+        
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .ex{
+        
+        position: relative;
+       font-size: 28px;
+       text-align: left; 
+       
+    
+    }
+    
+    
+    .mmm{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: #1f1d2c;
+    }
+    .mmmm{
+       
+       
+        background-color: #1f1d2c;
+    }
+    
+    .s1{
+        margin-left: 4%;
+        background-color: #1f1d2c;
+    }
+    .s2{
+        position:relative;
+       background-color: yellow;
+       display: grid;
+       grid-template-columns: 100%;
+       
+       
+        grid-row: 1/5;
+        grid-column: 2;
+       
+        
+    }
+    
+    #img{
+        position:relative;
+       right: 60%;
+        width: 120%;
+        height: 100%;
+       
+        
+    }
+    
+    #in {
+        position: relative;
+        left:9%;
+        width: 37%;
+        
+       
+    }
+    
+    #instgram {
+        position: relative;
+        width: 37%;
+        right: 30%;
+  
+    }
+    
+    #twitter {
+        position: relative;
+        width: 37%;
+        right: 65%;
+     
+    
+    }
+    
+    
+
+
+/*------------------------------*/
+
+
+.section2{
+   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1f1d2c;
+    
+}
+
+
+.contenedor-centrado{
+   
+    
+  
+    display: grid;
+   background-color: #1f1d2c;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 4%;
+    row-gap: 8%;
+    padding-bottom: 15%;
+    margin-right: 1%;
+    
+   
+    
+}
+
+.gran{
+    display: grid;
+    grid-column: 1/4;
+    background-color: #1f1d2c;
+    padding-top: 2%;
+    padding-bottom:4%;
+
+}
+
+.titulo{
+    font-size: 32px;
+    font-weight: 600;
+    align-items: center;
+   
+    color: #ffffff;
+  
+    
+}
+
+
+#amazon{
+    width: 55%;
+    position: relative;
+    left: 25%;
+}
+#airbnb{
+    width: 55%;
+    position: relative;
+    left: 25%;
+}
+
+#google{
+    width: 55%;
+    position: relative;
+    left: 25%;
+}
+
+.cc1, .cc2, .cc3{
+    position: relative;
+    top:25%;
+}
+
+
+.ll{
+position: relative;
+
+left:20%;
+text-align: left;
+}
+.aa{
+ position: relative;
+ left:20%;
+ font-size:16px;
+ text-align: left;
+ color:#E5E5E5
+}
+.bb{
+position: relative;
+left:20%;
+text-align: left;
+font-size: 12px;
+color:#E5E5E5
+}
+
+.c10{
+   
+    
+    background-color: #1f1d2c;
+    grid-column: 4/4;
+    grid-row:1/4
+       
+}
+#dibu{
+    position: relative;
+    bottom:6%;
+    width: 100%;
+    height: 100%;
+    left:-130%;
+   
+}
+/*------------------------------------------------*/
+
+.section3{
+    position: relative;
+   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.contenedor-abuelo{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#tt{
+    
+    position: relative;
+ 
+    width: 150%;
+   
+    left: 27%;
+    font-size: 32px;
+    font-weight: 600;
+    align-items: center;
+    color: #ffffff;
+   
+  
+
+}
+
+.titulo-1{
+    position: relative;
+  
+    
+    display: grid;
+    
+    height: 120%;
+    z-index: 1;
+   
+}
+.ca1{
+    background-color: #1f1d2c;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.ca2{
+    position: relative;
+    right:9%;
+    color: #f1a600;
+    text-align: right;
+    font-size: 32px;
+    font-weight:600;
+    background-color: #242635;
+}
+.cap{
+    background-color: #1f1d2c;
+}
+
+.capu{
+    background-color: #1f1d2c;
+}
+
+.capc{
+    background-color: #242635;
+}
+
+
+
+
+
+
+
+
+/*-----------------------*/
+.section4{
+   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+   background-color: #1f1d2c;
+    padding-bottom: 10%;
+}
+#img1, #img2, #img3{
+    width: 15%;
+}
+#img1{
+    
+    box-shadow: 0 -10px 0 6px  #f1a600;     
+    
+}
+
+#img2{
+    
+    box-shadow: 0 -10px 0 5px  #242635;    
+}
+
+#img3{
+    box-shadow: 0 -10px 0 6px  #f1a600;  
+}
+.contenedor-abuela{
+   
+    display: grid;
+   grid-template-columns: 70% 30%;
+    margin-left: 5%;
+    background-color: #1f1d2c;
+    row-gap: 1%;
+   
+
+}
+
+
+.contenedor-abuela2{
+  
+    display: grid;
+   grid-template-columns: 30% 70%;
+  
+    background-color: #1f1d2c;
+    row-gap: 1%;
+
+}
+
+.sec1{
+position: relative;
+ top: -2%;
+
+}
+
+
+.secu{
+   
+   
+ position: relative;
+ bottom: -2%;
+ left:15%;
+}
+
+#o{
+    font-size: 32px;
+    font-weight: 600;
+    align-items: center;
+    color: #ffffff; 
+}
+
+.titulo-2{
+   background-color: #1f1d2c;
+    padding-bottom: 5%;
+    font-size: 50px;
+    font-weight: 400;
+   
+}
+
+.hh{
+    background-color: #1f1d2c;
+}
+
+#img1, #img2, #img3{
+width: 80%;
+}
+
+
+
+#le{
+    font-size:18px;
+    text-align: left;
+    color:#ffffff;
+}
+#les{
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+
+    color:#ffffff;
+}
+#leso{
+    font-size: 18px;
+    text-align: left;
+    color:#ffffff;
+}
+
+
+
+
+
+/*-----------------------------------------*/
+
+.penultimo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #242635;
+}
+#con{
+    font-size: 32px;
+    font-weight: 600;
+    align-items: center;
+    color: #ffffff;
+}
+
+.contenedor-penultimo{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #242635;
+ 
+}
+
+#phone{
+    position: relative;
+    left:38%;
+    width: 28%;
+}
+
+#mail{
+    position: relative;
+    bottom: 18%;
+    left:38%;
+    width: 28%;
+}
+.wor{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#word{
+    font-size: 18px;
+    color: #ffffff;
+   
+}
+
+.caja6{
+    position: relative;
+    bottom:50%;
+}
+#word1{
+    font-size: 16px;
+    font-weight: 400;
+    color:#e5e5e5;
+   
+
+}
+#word2{
+    font-size: 16px;
+    font-weight: 400; 
+    color:#e5e5e5;
+}
+
+
+.titulo-p{
+    background-color: #242635;
+    grid-column: 1/3;  
+    padding-top: 1rem;
+
+}
+
+.caja1{
+   
+    color:#242635;
+}
+.caja2{
+    
+    color:#242635
+}
+.caja3{
+    
+    color:#242635
+    
+}
+.caja4{
+    
+    color:#242635
+}
+
+.caja5{
+    
+    color:#242635;
+}
+
+/*------------*/
+#footer-ultimo{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-column: 1/3; 
+}
+
+
+
+/*responsividad*/
+
+
+@media screen and ( min-width:220px) {
+
+   
+    .wor{
+        font-size: 10px;
+
+    }
+    #pl{
+        font-size: 25px;
+    }
+    .aa{
+        font-size: 12px;
+    }
+
+    .ll{
+        font-size: 18x;
+    }
+    #word{
+        font-size: 15px;
+    }
+    #word1 {
+        font-size: 10px;
+    }
+    #word2{
+        font-size: 10px;
+    }
+
+    #amazon{
+        width: 75%;
+        
+    }
+    #airbnb{
+        width: 75%;
+      
+    }
+    
+    #google{
+        width: 75%;
+       
+    }
+
+    .ex{
+        
+     
+       font-size: 20px;
+        
+       
+    
+    }
+
+ @media screen and ( min-width:370px) {
+     
+        .aa{
+            font-size: 16px;
+        }
+    
+        .ll{
+            font-size: 18px;
+        }
+        .bb{
+            font-size: 14px;
+        }
+   
+    }   
+
+   
+}
+
+@media screen and ( min-width:412px) {
+
+
+    input#menu-hamburguesa~ul{
+        width: 40%;
+      
+    }
+    .C1_1 {
+        padding-bottom: 2%;
+    }
+
+    .wor{
+        font-size: 18px;
+
+    }
+    
+    #word{
+        font-size: 18px;
+    }
+    #word1 {
+        font-size: 16px;
+    }
+    #word2{
+        font-size: 16px;
+    }
+
+
+
+    .ex{
+        font-size: 26px;
+    }
+     
+ 
+     
+    #pl{
+        position: relative;
+        font-size: 29px;
+        font-weight: 400;
+    }
+ 
+    #c11{
+        font-size: 60x;
+    }
+
+  
+    .section2{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #242635;
+    }
+
+
+    .contenedor-centrado{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2%;
+        row-gap: 8%;
+        padding-bottom: 15%;
+    }
+
+    .gran{
+        display: grid;
+        grid-column: 1/4;
+        background-color: #1f1d2c;
+        padding-top: 8%;
+        padding-bottom:4%;
+    }
+
+    .titulo{
+        font-size: 32px;
+        font-weight: 600;
+        align-items: center;
+        color: #ffffff;
+    }
+
+
+    #amazon{
+        width: 60%;
+        position: relative;
+        left: 25%;
+    }
+    #airbnb{
+        width: 60%;
+        position: relative;
+        left: 25%;
+    }
+
+    #google{
+        width: 60%;
+        position: relative;
+        left: 25%;
+    }
+
+    .cc1, .cc2, .cc3{
+        font-size: 20px;
+        position: relative;
+        top:35%;
+    }
+    .c2, .c5, .c8{
+        position: relative;
+        top:10%;
+
+    }
+
+
+
+    .ll{
+    position: relative;
+    top:25%;
+    text-align: left;
+    font-size: 20px;
+    }
+
+    .aa{
+    position: relative;
+    top:25%;
+    font-size:18px;
+    text-align: left;
+    color:#E5E5E5
+    }
+
+    .bb{
+    position: relative;
+    top:25%;
+    text-align: left;
+    font-size: 16px;
+    color:#E5E5E5
+    }
+
+    .c10{
+        background-color: #1f1d2c;
+        grid-column: 4/4;
+        grid-row:1/4
+    }
+
+    #dibu{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left:-150%;
+    }
+  
+
+}
+
+
+@media screen and ( min-width:464px) {
+
+    .C1_1 {
+        padding-bottom: 2%;
+    }
+
+
+    #c11{
+        font-size: 70px;
+    }
+
+}
+
+
+@media screen and ( min-width:636px) {
+
+    input#menu-hamburguesa~ul{
+        width: 30%;
+      
+    }
+    /*contenedor header*/
+    #c11{
+        font-size: 95px;
+    }
+
+    #twitter {
+        position: relative;
+        width: 44%;
+        right: 65%;
+    }
+
+
+
+
+    #in {
+        position: relative;
+        left:9%;
+        width: 44%;
+        
+    
+    }
+
+    #instgram {
+        position: relative;
+        width: 44%;
+        right: 30%;
+
+    }
+
+
+    #pl{
+        font-size: 33px;
+    
+    }
+
+    .ex{
+        font-size: 32px;
+    }
+    
+        
+    #le{
+        font-size:22px;
+    
+    }
+    #les{
+        font-size: 22px;
+    
+
+
+    }
+    #leso{
+        font-size: 22px;
+    
+    }
+
+    .section2{
+    
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #1f1d2c;
+    }
+
+
+    .contenedor-centrado{
+    
+        display: grid;
+    
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2%;
+        row-gap: 8%;
+        padding-bottom: 15%;
+        
+    }
+
+    .gran{
+        display: grid;
+        grid-column: 1/4;
+        background-color: #1f1d2c;
+        padding-top: 8%;
+        padding-bottom:4%;
+
+    }
+
+    .titulo{
+        font-size: 32px;
+        font-weight: 600;
+        align-items: center;
+    
+        color: #ffffff;
+    
+        
+    }
+
+
+    #amazon{
+        width: 60%;
+        position: relative;
+        left: 25%;
+    }
+    #airbnb{
+        width: 60%;
+        position: relative;
+        left: 25%;
+    }
+
+    #google{
+        width: 60%;
+        position: relative;
+        left: 25%;
+    }
+
+    .cc1, .cc2, .cc3{
+        font-size: 25px;
+        position: relative;
+        top:35%;
+    }
+    .c2, .c5, .c8{
+        position: relative;
+        top:10%;
+    }
+
+
+
+    .ll{
+        position: relative;
+        top:25%;
+
+        text-align: left;
+        font-size: 25px;
+    }
+    .aa{
+
+        position: relative;
+        top:25%;
+        font-size:18px;
+        text-align: left;
+        color:#E5E5E5
+    }
+
+    .bb{
+        position: relative;
+        top:25%;
+        text-align: left;
+        font-size: 16px;
+        color:#E5E5E5
+    }
+
+    .c10{
+        background-color: #1f1d2c;
+        grid-column: 4/4;
+        grid-row:1/4
+    }
+
+    #dibu{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left:-150%;
+    }
+
+    .ver, .mmm{
+        padding-bottom: 5%;
+    }
+    #pl{
+        padding-bottom: 5%;
+    }
+
+
+
+}
+
+
+@media screen and ( min-width:800px) {
+
+    .pp{
+        font-size:18px;
+        font-weight: 400;
+        position: relative;
+        top:10%;
+        text-align: center;
+    }
+
+    .C1_1 {
+   
+  
+    
+        padding-bottom: 3%;
+        
+    }
+
+    
+    /*contenedor header*/
+
+    .contenedor-header{
+      
+        margin-left: 10%;
+        margin-right: 2%;
+       
+        
+      
+    }
+    .contenedor-centrado{
+      
+        margin-left: 10%;
+        margin-right: 10%;
+       
+        
+      
+    }
+   
+    
+    .s1{
+        margin-left: 10%;
+        margin-right: 10%;  
+    }
+
+    .wor{
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    #pl{
+       font-size: 45px;
+     
+    }
+
+    .ex{
+        font-size: 40px;
+    }
+    
+    #word{
+        font-size: 32px;
+        color: #ffffff;
+       
+    }
+
+    #c11{
+        font-size: 110px;
+    }
+
+    #word1{
+        font-size: 18px;
+        font-weight: 400;
+        color:#e5e5e5;
+       
+    
+    }
+    #word2{
+        font-size: 18px;
+        font-weight: 400; 
+        color:#e5e5e5;
+    }
+    
+
+    #con{
+        font-size: 50px;
+    }
+    
+    #le{
+        font-size:32px;
+  
+    }
+    #les{
+        font-size: 32px;
+    }
+
+    #leso{
+        font-size: 32px;
+    }
+
+    .C1_1{
+        font-size: 50px;
+    }
+    #o{
+        font-size: 50px;
+    }
+
+    #tt{
+        font-size: 50px;
+    }
+
+    .ca2{
+        font-size: 45px;
+    }
+
+
+    .ca1{
+        font-size: 25px;
+    }
+  
+    
+    
+    .titulo{
+        font-size: 50px;
+        font-weight: 600;
+        align-items: center;
+        color: #ffffff;
+    }
+    
+    
+    #amazon{
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
+
+    #airbnb{
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
+    
+    #google{
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
+    
+    .cc1, .cc2, .cc3{
+        font-size: 32px;
+        position: relative;
+        top:35%;
+    }
+    .c2, .c5, .c8{
+        position: relative;
+        top:10%;
+    }
+    
+    
+    
+    .ll{
+    position: relative;
+    top:25%;
+    text-align: left;
+    font-size: 32px;
+    }
+
+    .aa{
+    
+     position: relative;
+     top:25%;
+     font-size:20px;
+     text-align: left;
+     color:#E5E5E5
+    }
+
+    .bb{
+    position: relative;
+    top:25%;
+    text-align: left;
+    font-size: 18px;
+    color:#E5E5E5
+    }
+    
+    .c10{
+        background-color: #1f1d2c;
+        grid-column: 4/4;
+        grid-row:1/4
+    }
+
+    #dibu{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left:-150%;
+    }
+    #os{
+        font-size: 18px;
+    }
+
+    #uu{
+        font-size: 32px;
+    }
+
+
+    #u1{
+        position: relative;
+        left: 28%;
+        width: 40%;
+    }
+    #aca2{
+        position: relative;
+        bottom: 10%;
+        left: 28%;
+        width: 40%;
+      
+    }
+
+    #footer-ultimo{
+        font-size: 20px;
+        
+    }
+
+
+    .contenedor-abuela{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+        left: 5%;
+    }
+
+    .contenedor-abuela2{
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+       
+        right: 5%;
+      
+        
+    }
+
+    #in {
+        position: relative;
+        left: 10%;
+        width: 50%;
+        
+       
+    }
+    
+    #twitter {
+        position: relative;
+        right:45%;
+        width: 50%;
+      
+    
+    }
+    
+    #instgram {
+        position: relative;
+        right:15%;
+        width: 50%;
+       
+    
+    }
+
+    .ver, .mmm{
+        padding-bottom: 5%;
+    }
+    #pl{
+        padding-bottom: 5%;
+    }
+
+
+   
+    
+}
+
+   
+@media screen and ( min-width:1014px) {
+     .ver, .mmm{
+        padding-bottom: 5%;
+    }
+    #pl{
+        padding-bottom: 5%;
+    }
+
+    
+    #in {
+        position: relative;
+        left:0%;
+        width: 45%;
+        
+    
+    }
+
+     
+    #twitter {
+        position: relative;
+        right:80%;
+        width: 45%;
+      
+    
+    }
+    
+    #instgram {
+        position: relative;
+        right:40%;
+        width: 45%;
+       
+    
+    }
+
+    nav{
+      
+        display: flex;  
+        justify-content: space-between;
+        align-items: center; 
+        padding: .4rem 1.25rem; 
+        height: 55px;
+       
+    }
+
+
+    .nav li:hover{
+       color: #f1a600;
+       background-color: #1f1d2c;
+    
+    }
+    
+    .nav li{
+        font-size: 16px;
+        border-top: 0;
+       
+       
+
+    }
+    
+    .nav li a{
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+        padding:none;
+      
+  
+    }
+    nav>label>img{
+        width: 20px;
+    }
+    input#menu-hamburguesa{
+        visibility: hidden;
+    }
+    input#menu-hamburguesa~ul{
+   
+  
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        height:calc(100vh - 55px);
+        top: 55px;
+        right: 100%;
+        transition: all 300ms linear;
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        gap:2rem;
+        padding: 2rem 1rem;
+       
+        
+    }
+    input#menu-hamburguesa:checked~ul{
+        right: 0;
+    }
+
+  
+
+
+    label{
+        display: none;
+    }
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+        transition: none;
+        
+    }
+    nav > ul > li{
+        
+        display: inline-block; 
+       
+        
+    }
+    
+    nav>ul>li>a{
+        color: #ffffff;
+        text-decoration: none;  
+        padding: .7rem 1rem; 
+    }
+
+    nav>ul>li>a:hover{
+        color:#f1a600;
+    }
+
+
+}
+
+@media screen and ( min-width:1035px) {
+
+    
+
+
+    #amazon{
+        width: 40%;
+        position: relative;
+        left: 25%;
+    }
+    #airbnb{
+        width: 40%;
+        position: relative;
+        left: 25%;
+    }
+    
+    #google{
+        width: 40%;
+        position: relative;
+        left: 25%;
+    }
+
+}
+
+
+@media screen and ( min-width:655px) {
+
+
+    #amazon{
+        width: 45%;
+        position: relative;
+        left: 25%;
+    }
+    #airbnb{
+        width: 45%;
+        position: relative;
+        left: 25%;
+    }
+    
+    #google{
+        width: 45%;
+        position: relative;
+        left: 25%;
+    }
+
+}
+
+@media screen and ( min-width:1108px) {
+
+    #c11{
+
+        left:6%;
+        font-size: 150px;
+    }
+
+
+    #pl{
+        font-size: 45px;
+    
+    }
+
+    .ex{
+        font-size: 40px;
+    }
+    
+        
+    #u1{
+        position: relative;
+        left: 30%;
+        width: 38%;
+    }
+    #aca2{
+        position: relative;
+        bottom: 10%;
+        left: 30%;
+        width: 38%;
+    
+    } 
+
+
+
+
+    .C1_1{
+        font-size: 52px;
+    }
+    
+
+
+
+    #amazon{
+        width: 37%;
+        position: relative;
+        left: 25%;
+    }
+    #airbnb{
+        width: 37%;
+        position: relative;
+        left: 25%;
+    }
+
+    #google{
+        width: 37%;
+        position: relative;
+        left: 25%;
+    }
+
+
+
+
+
+}
+
+
+
+@media screen and ( min-width:1800px) {
+
+    #amazon{
+        width: 40%;
+        position: relative;
+        left: 25%;
+    }
+    #airbnb{
+        width: 40%;
+        position: relative;
+        left: 25%;
+    }
+    
+    #google{
+        width: 40%;
+        position: relative;
+        left: 25%;
+    }
+    
+    #c11{
+        font-size: 210px;
+    }
+    
+    
+    
+}
+    
+
+
+
+
+
+
+
+
+
