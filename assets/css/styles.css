@@ -787,7 +787,7 @@ width: 80%;
 .penultimo{
     width: 100%;
     margin-left: auto;
-    margin-right: 20%;
+    margin-right: auto;
     background-color: #242635;
 }
 #con{
@@ -801,8 +801,8 @@ width: 80%;
     
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
     background-color: #242635;
  
 }
@@ -1083,7 +1083,7 @@ width: 80%;
     .aa{
     position: relative;
     top:25%;
-    font-size:18px;
+    font-size:16px;
     text-align: left;
     color:#E5E5E5
     }
@@ -1092,7 +1092,7 @@ width: 80%;
     position: relative;
     top:25%;
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     color:#E5E5E5
     }
 
@@ -1268,7 +1268,7 @@ width: 80%;
 
         position: relative;
         top:25%;
-        font-size:18px;
+        font-size:16px;
         text-align: left;
         color:#E5E5E5
     }
@@ -1277,7 +1277,7 @@ width: 80%;
         position: relative;
         top:25%;
         text-align: left;
-        font-size: 16px;
+        font-size: 14px;
         color:#E5E5E5
     }
 
